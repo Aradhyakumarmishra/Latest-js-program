@@ -1,0 +1,1482 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>aradhya</title>
+
+
+
+</head>
+<script>
+
+    // ABC method in javascript
+
+    // const person = {
+    //         firstName: "John",
+    //         lastName: "Doe",
+    //     };
+
+    //     function greet(city, country) {
+    //         console.log(`Hello, I am ${this.firstName} ${this.lastName} from ${city}, ${country}.`);
+        // }
+    //         greet.apply(person, ["Delhi", "India"]); // this is for apply method
+
+    //         const boundGreet = greet.bind(person, "Mumbai", "India");
+    //             boundGreet(); // this is for bind method
+
+    // greet.call(person, "New York", "USA"); // this is for the call method
+
+
+// GITHUB TOKEN     // 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
+
+    // closures example closures create a customizable function=========================================================
+
+//     function outer(){
+//         let outervar ="main outer hoon"
+//         function inner(){
+//             console.log(outervar)
+//         }
+//         return inner
+//     }
+// const closer = outer();
+// closer()
+
+
+// SECOND CLOSURE EXAMPLE==============================================================
+
+// function greet(name){
+//     return function(message){
+//         console.log(`hi ${name}, ${message}`)
+//     }
+// }
+// const getaradhya = greet("aradhya")
+//   getaradhya("good morning")
+
+    // THIRLD CLOSURE EXAMPLE==============================================================
+        // Alag - alag functions banane ke liye closure use ho sakta hai:
+    // function multiplier(factor) {
+    //     return function (x) {
+    //         return x * factor;
+    //     }
+    // }
+    // const double = multiplier(2);
+    // const triple = multiplier(3);
+    // console.log(double(5)); // 10
+    // console.log(triple(5)); // 15
+
+
+
+// RECURTION FUNCTION EXAMPLE FACTORIAL========================================
+
+    // function factorial(n) {
+    //         if (n === 0 || n === 1) {
+    //             return 1;
+    //         }
+    //         return n * factorial(n - 1);
+    //     }
+    //     console.log(factorial(5)); 
+ 
+
+    // RECURTION FUNCTION EXAMPLE ADDITION========================================
+
+    // function sumRecursive(n) {
+    //             if (n === 1) {
+    //                 return 1;
+    //             }
+    //             return n + sumRecursive(n - 1);
+    //         }
+    // console.log("Sum from 1 to 100 is:", sumRecursive(100));
+
+  
+        // FOURTH CLOSURE EXAMPLE==============================================================
+
+        // function counter() {
+        //     let count = 0;
+        //     return {
+        //         increment: function () {
+        //             count++;
+        //             console.log(count);
+        //         },
+        //         decrement: function () {
+        //             count--;
+        //             console.log(count);
+        //         }
+        //     }
+        // }
+        // const myCounter = counter();
+        // myCounter.increment(); 
+        // myCounter.increment(); 
+        // myCounter.decrement();
+
+    // var i;
+    // for(i=1;i<=10;i++){
+    //     document.write(2*i+" "+3*i+" "+4*i+"<br>")
+    // } 
+    // function fun(){
+    // var n = parseInt(prompt("enter the number"));
+    // var c,a=-1;
+    // var b=1;
+    // var i= 1;
+    // do{
+    //     c=a+b;
+    //     document.write(c,"<br>")
+    //     a=b;
+    //     b=c;
+    //     i++;
+    // }
+    // while(i<=n)
+    // }
+
+
+// Missing number program ======================================================================
+
+//   var arr = [6, 9, 10, 5, 15, 13];
+//     var max = Math.max(...arr);
+//     var missing = [];
+//     for (var i = 1; i <= max; i++) {
+//         if (!arr.includes(i)) {
+//             missing.push(i);
+//         }
+//     }
+//     console.log(missing);
+
+
+    // HOW TO ADD TWO NUMBER WITHOUT USING PLUS OPERATER ===============================================================
+
+    // var a = 3;
+    // var b = 4;
+    // var result;
+    // for(var i=1;i<=b;i++){
+    //     result = a+i
+    // }
+    // console.log(result)
+
+
+    //  FIND THE VOWEL AND CONSONENT IN ANY STRING ===================================================================
+
+    // var s = "manish"
+    // var cv = 0
+    // var cc = 0
+    // for (var i = 0; i < s.length; i++) {   
+    //     if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') {
+    //         cv++;
+    //     } 
+    //     else {
+    //         cc++;
+    //     }
+    // }
+    // document.write("Total Vowel is" + cv);
+    // document.write("<br>Total Consonent is" + cc);
+
+
+    //HOW TO MERGE TO ARRAY===================================================================================== 
+
+    // var x1 = ['aradhya','manish','send','react','name']
+    // var x2 = [2,3,4,5,6]
+    // var x3 = []
+    // for (var i = 0; i < x1.length + x2.length; i++) // i=3
+    // {
+    //     if (i < x1.length)   // 3<2
+    //     {
+    //         x3.push(x1[i])   // 1,2
+    //     }
+    //     else {
+    //         x3.push(x2[i - x1.length]); // 1
+    //     }
+    // }
+    // for (var i = 0; i < x3.length; i++) {
+    //     document.write(x3[i] + "<br>");
+    // }
+
+ // ISKA RESPONSE AK NUMBER AUR AK STRING AISE HOGA===========================================================
+
+ //    var x1 = ['aradhya', 'manish', 'send', 'react', 'name'];
+ //     var x2 = [2, 3, 4, 5, 6, 7];
+ //     var x3 = [];
+ //     var maxLength = Math.max(x1.length, x2.length);
+ //     for (var i = 0; i < maxLength; i++) {
+ //         if (i < x1.length) {
+ //             x3.push(x1[i]);
+ //         }
+ //         if (i < x2.length) {
+ //             x3.push(x2[i]);
+ //         }
+ //     }
+ //     console.log(x3);
+
+    // HOW TO PRINT no REPEAT NUMBER IN ARRAY ==================================================================== 
+
+    //    x = [1, 2, 3, 1, 2, 5, 7, 1]
+    //         for (var i = 0; i < x.length; i++) //i=1
+    //         {
+    //             var count = 0;    // count =0
+    //             for (var j = 0; j < x.length; j++)  // 3
+    //             {
+    //                 if (x[i] == x[j] && i != j) // 1==1
+    //                 {
+    //                     count = 1;
+    //                     break;
+    //                 }
+    //             }
+    //             if (count == 0) {
+    //                 console.log(x[i] + "<br>")
+    //             }
+    //         }
+
+
+    //  OUTPUT [1, 2, 3, 5, 7]
+
+    //   x = [1, 2, 3, 1, 2, 5, 7, 1]
+    //   var uniq = []
+    //   for(var i=0;i<x.length;i++){
+    //     if(!uniq.includes(x[i])){
+    //         uniq.push(x[i]);
+    //     }
+    //   }
+    //   console.log(uniq);
+
+
+    // FIRST DUPLICATE NUMBER===============================================
+
+    // let x = [1, 2, 3, 1, 2, 5, 7, 1];
+    //     let firstDuplicate = null;
+
+    //     for (let i = 0; i < x.length; i++) {
+    //         for (let j = 0; j < i; j++) {
+    //             if (x[i] === x[j]) {
+    //                 firstDuplicate = x[i];
+    //                 break;
+    //             }
+    //         }
+    //         if (firstDuplicate !== null) {
+    //             break;
+    //         }
+    //     }
+    //     console.log("First duplicate:", firstDuplicate);
+
+
+    // OUTPUT [1, 2, 3, 5, 7, 10, 11, 21]
+
+    //        var x = [10,11,21,1, 2, 3, 1, 2, 5, 7, 1]
+    //        var x1=[];
+    //             for (var i = 0; i < x.length; i++) //i=1
+    //             {
+    //                 var count = 0;    // count =0
+    //                 for (var j = 0; j < i; j++)  // 3
+    //                 {
+    //                     if (x[i] == x[j] && i != j) // 1==1
+    //                     {
+    //                         count = 1;
+    //                         break;
+    //                     }
+    //                 }
+    //                if (count == 0) {
+    //                     x1.push(x[i])     
+    //                 } 
+    //             }
+    //             var a = x1.sort((a,b)=>a-b)
+    //              console.log(a)
+
+
+// OUTPUT [1,2,3]========================================================================================
+
+        //    var x = [10,11,21,1, 2, 3, 1, 2, 5, 7, 1,3]
+        //    var x1=[];
+        //         for (var i = 0; i < x.length; i++) //i=1
+        //         {
+        //             var count = 0;    // count =0
+        //             for (var j = 0; j < i; j++)  // 3
+        //             {
+        //                 if (x[i] == x[j] && i != j) // 1==1
+        //                 {
+        //                     count = 1;
+        //                     break;
+        //                 }
+        //             }
+        //            if (count == 1) {
+        //             if(!x1.includes(x[i]))
+        //                 x1.push(x[i])     
+        //             } 
+        //         }
+        //         console.log(x1)
+
+        
+    //  for(var i =1;i<=5; i++){
+    //     for(var j = 1; j<=i; j++){
+    //     document.write("*")
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // Output 54321 5432
+
+    // for(var i=1;i<=5;i++){
+    //     for(var j=5;j>=i;j--){
+    //         document.write(j)
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // HOW TO FIND FIRST LETTER CAPITAL IN ARRAY ================================================================
+
+    // var a = ["aradh","ayush","shubh"]   
+    // for(var i =0;i<a.length;i++){
+    //   a[i]= a[i][0].toUpperCase()+a[i].substring(1)
+    //   console.log(a[i])
+    // }
+
+    // THIS PROGRAM IS OUTPUT, (naman ssssss aaaaaaa)=============================================================
+
+//       var s1 = "ravikumar is goining to market and naman meet there ssssss aaaaaaa jkl"
+//     var s2 = s1.split(" ");   
+// var palindrom = []
+//     for(var i=0;i<s2.length;i++){
+//         var words = s2[i]
+//         var reverse = ""
+//         for(var j=0;j<words.length;j++){
+//             reverse = words[j]+reverse
+//         }
+//         // console.log(reverse)
+//         if(words===reverse && words.length>1){
+//             palindrom.push(words) 
+//         }
+       
+//     }
+//   console.log(palindrom)
+
+    //    var s = "ab@cdgmail.com"
+    //     var atpos = s.indexOf("@")
+    //     var dotpos = s.lastIndexOf(".")
+    //     if (atpos < 2 || (dotpos - atpos) < 2 || (s.length - 1 == dotpos)) {
+    //         document.write("Invalid Emailid")
+    //     }
+    //     else {
+    //         document.write("Valid Email")
+    //     } 
+
+    // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, PROGRAM TO CHECK PRIME NUMBER ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 
+
+    // function fun(){
+    // var c='true'
+    // var s="";
+    //var num = parseInt (document.getElementById("va").value)
+    // for(var i=2;i<num/2;i++){
+    //     if (num%i == 0){
+    //         c=false
+    //         break;
+    //     }
+    // }
+    // if(c){
+    //     s="prime"
+    // }
+    // else{
+    //     s="not prime"
+    // }
+    //  document.getElementById("res").innerHTML = s;
+    // }
+  
+
+    // get prime number
+
+    // var n = prompt("enter the number")
+    // for(var i=2;i<=n;i++){
+    //      var flag = 0;
+    //     for(var j=2;j<i;j++){
+    //         if (i % j == 0) {
+    //             flag = 1;
+    //             break;
+    //         }
+    //     }
+    //     if (flag == 0) {
+    //         console.log(i)
+    //     } 
+    // }
+
+    // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, number 12345 se 1234 isi tarah ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+    // for( var i=1;i<=5;i++){
+    //     for(var j = 1;j<=6-i;j++){
+    //         document.write(j+ " ")
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // for (var i=1;i<=5;i++){
+    //     for(var j=1;j<=i;j++){
+    //         document.write(j)
+    //     }
+    //     document.write("<br>")
+    // }
+
+    
+   // 5 54 543 5432 54321 this is output of this program
+
+    // for(var i=5;i>=1;i--){
+    //     for(var j=5;j>=i;j--){
+    //         document.write(j)
+    //     }
+    //        document.write("<br>")
+    // }
+ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+    // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, ASCCI VALUE PROGRAM ABCD COPY TO BACK PROGRAM ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 
+
+    // for (var i = 1; i <= 5; i++) {     
+    //     c = 65
+    //     for (var j = 1; j <= 6 - i; j++) {
+    //         document.write(String.fromCharCode(c) + " ");
+    //         c++;
+    //     }
+    //     document.write("<br>");
+    // }
+
+    // ------------------ output ======================= ABCDEF ABCDE =============================================
+
+    // for(var i=70;i>=65;i--){
+    //     for(var j=65;j<=i;j++){
+    //         document.write(String.fromCharCode(j))
+    //     }
+    //       document.write("<br>");
+    // }
+
+    // FFFFFF EEEEE DDDD ==================================================================================
+
+    //   for (var i = 70; i >= 65; i--) {
+    //         for (var j = 65; j <= i; j++) {
+    //             document.write(String.fromCharCode(i))
+    //         }
+    //         document.write("<br>");
+    //     }
+
+    // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, AAAAA BBBB CCC ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+    //  for(var i=65;i<=70;i++){
+    //         for(var j=70;j>=i;j--){
+    //             document.write(String.fromCharCode(i)+ " ");
+    //         }
+    //         document.write("<br>");
+    //     }
+
+    // F E D C B A  this is response of this logic
+
+    // for(var i=65;i<=70;i++){
+    //     for(var j = 70; j >=i; j--){
+    //           document.write(String.fromCharCode(j) + " ");
+    //     }
+    //      document.write("<br>");
+    // }
+
+    // THIS PROGRAM OUTPUT FFFFF EEEE 
+    
+    // for(var i=70;i>=65;i--) {
+    //     c=65
+    //     for(var j=65;j<=i;j++){
+    //         document.write(String.fromCharCode(i) + " ");
+    //         // c++;
+    //     }
+    //     document.write("<br>");
+    // }
+
+    // ,,,,,,,,,,,,,,,,,,,,,  CALLBACK FUNCTION IN JAVACSRIPT JISME FUNCTION KE ANDAR FUNCTION KO PAAS KARTE H  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+    // const perOne = (friend,callfrnd) => {
+    //     document.write (`i am going ${friend} i will call you`)
+    //     callfrnd()
+    // }
+    // const perTwo = () =>{
+    //     document.write(`hey whats up guys`)
+    // }
+    // perOne("gautam",perTwo)
+  
+    // ,,,,,,,,,,,,,,,ASYNC AUR AWAIT SE MTLB JHA AWAIT LGA H WHA KE BAD KA CODE RUN HOGA AUR WO BAD ME CHALEGA=======================================
+    // KYUNKI DATA FETCH JAB TAK HOGA TAB TAK SARE DATA RUN HONGE=====================================================================================
+
+    // async function test(){
+    //const response = await fetch ("json/student_data.json"); // yha hum api bhi likh sakte hain AUR ITNE CODE KO RETURN ME AK LINE LIKH SAKTE HAIN 
+    //const students = await response.json();
+    //return students;
+    // return(await fetch("json/student_data")).json(); // STUDENT NAME KA KOI DATA RHA HOGA AUR FETCH KA USE API ME HOTA HAI JYADA 
+    // }
+    // test().then((res)=>{
+    // console.log(res); // RES SE HEE TEST() KI SARI VALUE AA RAHI 
+    // }).catch((error)=>{
+    //   console.log(error); 
+    // });
+
+    // OUTPUT 55555 4444 333 22 1 
+
+    // for(var i=5;i>=1;i--){
+    //     for(var j=1;j<=i;j++){
+    //         document.write(i+ " ")
+    //     }
+    // document.write("<br>")
+    // }
+
+    // PATTERN PROGRAM 54321 5432 543 54 5 ===============================================================================
+
+    // for (var i = 1; i <= 5; i++) {
+    //     for (var j = 5; j >= i; j--) {
+    //         document.write(j)
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, STAR PIRAMID JAVASCRIPT ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+    // for(var i = 1; i<=5 ;i++){
+    //     for(var k =1;k<=(5-i);k++){
+    //         document.write("&nbsp");
+    //     }
+    //     for(var j=1;j<=i;j++){
+    //         document.write("*")      
+    //     }
+    //      document.write("<br>")
+    // }
+
+
+    // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,SIMPLE INTEREST PROGRAM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+    //   function calculate(){
+    //     var p = parseInt(document.getElementById("p").value)
+    //     var r = parseInt(document.getElementById("r").value)
+    //     var t = parseInt(document.getElementById("t").value)
+    //     var si = p*r*t/100    
+    //     document.getElementById('res').innerHTML = si
+    //   }
+
+    //,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, PROMISE FUNCTION PROGRAM ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,    
+
+    // function prom(complete){
+    //     return new Promise(function(resolve,reject){
+    //         if(complete){
+    //             resolve('i am successfull')
+    //         }
+    //         else{
+    //             reject('not successfully')
+    //         }
+    //     });
+    // }
+    //     let onfulfilment=(result)=>{
+    //         console.log(result)
+    //     }
+    //     let onRejection = (error)=>{
+    //         console.log(error)
+    //     }
+    // prom(true).then(onfulfilment);
+    // prom(true).catch(onRejection);
+
+    // FCATORIAL PROGRAM WITH LOOP 
+
+    // var a = 5;
+    // var c = 1;
+    // for(var i=1;i<=a;i++){
+    //    c = c*i 
+    // }
+    // console.log(c)
+
+    // PRINT ONE NUMBER AND ONE CHAR BUT UNDEFINES AFTER PRINT 
+
+    // let a = "5656564564";
+    // let str = "aradhyakum";
+    // for(var i=0;i<str.length+a.length;i++){
+    //     console.log(str[i])
+    //     console.log(a[i])
+    // }
+
+    // THE REVERSE ORDER IN NUMBER THE PROMPT ==================================================================== 
+
+    // var a1 = prompt("Enter your number")
+    //     var z = a1;
+    //     var reverse = 0;
+    //     while(z>0){
+    //         var reminder = z%10;
+    //         reverse =(reverse*10)+reminder
+    //         z = parseInt(z/10)
+    //     }
+    //    document.write('reverse of number:' +reverse)
+
+    // ADD STRING NUMBER PROGRAM =====================================================================================
+
+    //  var num = 1234566799;
+    //  var sum = 0;
+    //  var i=0
+    //  do{
+    //  var rem = num%10;
+    //  num = num/10;
+    //  num = parseInt(num);
+    //  sum = sum+rem
+    //   } while(num!=0){
+    //     console.log(sum)
+    //   }
+
+ // number addition ===========================================================================================
+
+    // var num = 131313116;
+    // var max = num.toString().split('').map(Number)
+    // var sum = 0
+    // for(var i=0;i<max.length;i++){
+    //     sum = max[i]+sum
+    // }
+    // console.log(sum)
+
+    // reverse string program =========================================================================================
+
+    // var a = 'reactgoogle'
+    // var rs = '';
+    // for(var i=0;i<a.length;i++){
+    //     rs = a[i] + rs
+    // }
+    // console.log(rs)
+
+    // pradesh madhya from am i ================================================================================
+
+    // var b = 'i am from madhya pradesh';
+    //     var a = b.split(' '); // Split by space to get words
+    //     var rs = '';
+    //     for (var i = a.length - 1; i >= 0; i--) {
+    //         rs += a[i] + (i > 0 ? ' ' : '');
+    //     }
+    //     console.log(rs);
+
+    // FACTORIAL PROGRAM WITH LOOP ====================================================================================
+
+    // var a = prompt('enter the number')
+    // var mlt = 1;
+    // if(a==0){
+    //     console.log(`the factorial of ${a} is 1`)
+    //   }
+    //     else if (a <0 ) {
+    //         console.log(`the factorial of negative ${a} is not posible`)
+    //     }
+    //     else{
+    //         for(var i=1;i<=a;i++){
+    //             mlt = mlt*i
+    //            console.log(mlt) // out of loop print karenge to kewal total dega
+    //         }
+    //     }
+
+
+    // PALNIDROME PROGRAM WITH METHOD ======================================================================
+
+    // var string = prompt('enter the string')
+    // var splt = string.split('')
+    // var revstr = splt.reverse('')
+    // var jn = revstr.join('')
+    // if(string == jn){
+    // console.log(`the ${string} is palindrome`)
+    // }
+    // else if(string != jn){
+    //     console.log(`the ${string} is not palindrome`)
+    // } 
+        
+    // THIS PALINDROME WITHOUT FUNCTION ==============================================================================
+
+    // var string = prompt('please enter a palindrome')
+    // var b = string.length;
+    // for(var  i =0;i<b/2;i++){
+    //     var count = 0;
+    //     break;
+    // }
+    //     if(string[i] == string[b-1-i]){
+    //         console.log('it is palindrome')        
+    //     }
+    //     else{
+    //         console.log('it is not palindrome')
+    //     }
+
+
+    // Second Palindrom With Match 
+
+    // var string = prompt("enter the value")
+    // var str = ''
+    // for(var i=0;i<string.length;i++){
+    //     str = string[i]+str
+    // }
+    // if(str == string){
+    //     console.log("palindrom")
+    // }else{
+    //     console.log("not palindrom")
+    // }
+
+    // PLINDROME PROGRAM WITH FUNCTION AND LOOP===================================================================
+
+    // function check(){
+    // var rep = string.length
+    // for(var i=0;i<rep/2;i++){
+    // if(string[i] == string[rep-1-i]){
+    //     return 'this is palindrome'
+    // }
+    // else{
+    //     return 'not a palindrome'
+    // }
+    // }
+    // }
+    //     var string = prompt('enter the string')
+    //     var value = check(string)
+    //     console.log(value)
+
+    // REVERSE OUTPUT = PRADESH MADHYA FROM AM I ======================================================================
+
+    // var a ='i am from madhya pradesh';
+    // var b = a.split(' ');
+    // var c = '';
+    // for (var i=0;i<b.length;i++){
+    //     c = b[i]+" "+c    // space gap ke liye       
+    // }
+    // console.log(c) 
+
+    // BIJLI KE BILL KA PROGRMA IF 100 UNIT TO 0 RUPAY AUR AFTER 100 5 RUPAY UNIT AND AFTER 200 10 RUPAY UNIT ======================  
+
+    // function fun(){
+    //     var bill = parseInt(document.getElementById('id1').value)
+    //     var amt = 0;
+    //     if(bill>0 && bill<=100){
+    //         amt = amt*0
+    //     }
+    //     else if(bill>100 && bill<=200){
+    //         amt = bill*5
+    //     }
+    //     else if( bill>200){
+    //         amt = 500+((bill-200)*10)
+    //     }
+    //     else{
+    //         document.write('wrong input')
+    //     }
+    //     document.write("total bill amount is : "+amt)
+    // }
+
+
+    // FORM VALIDATION IN JAVASCRIPT ================================================================================
+
+    // function fun(){
+    //     var x = document.myform.email.value;
+    //     var y = document.myform.password.value;
+    //      var atp = x.indexOf('@')
+    //      var lstp = x.lastIndexOf('.')
+    //      if(atp<3 || lstp<atp+2){
+    //          alert ('please correct email')
+    //         //return false;
+    //     }
+    //   else if(y.length<5){
+    //          alert('please fill password greter the five number')
+    //         //return false;
+    //     }
+    // }
+
+    // HCF PROGRAM IN JAVASCRIPT =====================================================================================
+
+    // var a = 45;
+    // var b = 60;
+    // for(var i=1;i<=a && i<=b;i++){
+    //     if(a%i==0 && b%i==0){
+    //         hcf = i;
+    //     }  
+    // }
+    // console.log(hcf)
+
+    // ULTA PYRAMID BANANE KA TRICK ==========================================================================
+
+    // for(var  i=9;i>=1;i--){
+    //     for(var k=1;k<=9-i;k++){
+    //         document.write("&nbsp;")
+    //     }
+    //     for(j =1;j<=i;j++){
+    //         document.write(j)
+    //          // document.write("*")
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // SEEDHA PERAMID + ULTA PYRAMID ============================================================================  
+
+    //     for (var i = 1; i <= 9; i++) {
+    //         for (var k = 1; k <= 9 - i; k++) {
+    //             document.write("&nbsp")
+    //         }
+    //         for (j = 1; j <= i; j++) {
+    //             document.write(j)
+    //             // document.write("*")
+    //         }
+    //         document.write("<br>")
+    //     } //yha se ulta loop chla diya
+    //  for(var  i=9;i>=1;i--){
+    //     for(var k=1;k<=9-i;k++){
+    //         document.write("&nbsp")
+    //     }
+    //     for(j=1;j<=i;j++){
+    //         document.write(j)
+    //          // document.write("*")
+    //     }
+    //     document.write("<br>")
+    // }
+    
+    // THIS IS A PROMISE.ALL FUNCTION YADI BAHUT SARE FUNCTION AK SATH CALL KARNA HO ======================================= 
+
+    // let p1 = new Promise((resolve, reject)=>{
+    //     setTimeout(() => {
+    //         console.log('the first promise has resolved')
+    //         resolve(10)
+    //     }, 1*1000);
+    // });
+    //     let p2 = new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             console.log('the second promise has resolved')
+    //             resolve(20)
+    //         }, 2 * 1000);
+    //     });
+    //     let p3 = new Promise((resolve, reject) => {
+    //             setTimeout(() => {
+    //                 console.log('the thirld promise has resolved')
+    //                 resolve(30)
+    //             }, 3 * 1000);
+    //         });
+    //         Promise.all([p1,p2,p3]).then((result)=>{
+    //             console.log(`result: ${result}`)
+    //         }).catch((error)=>{
+    //             console.log(`error: ${error}`)
+    //         })
+
+    //   setTimeout(() => {
+    //     var date = new Date()
+    //     document.writeln(date.getHours()+":"+date.getMinutes()+":"+date.getSeconds())
+    //   }, 1000);
+
+
+    //  FOREACH METHOD USE TO CALL A FUNCTION ONES FOR EACH ELEMENT IN AN ARRAY AND IN AN OREDER ============================
+
+    // var arr = ['java','php','python','react','name']
+    // arr.forEach(function(val,ind,arr){
+    //     console.log(val.toUpperCase()+":"+ind+":"+arr.toUpperCase())
+    // })
+
+    // CREATE A ARRAY AND STORE SECOND ARRAY WHICH IS greater TO 15 ============================================================
+
+    // var a = [12,13,45,65,23,89,56] 
+    // var b = []
+    // for(var i=0;i<a.length;i++){
+    //     if(a[i]>15){
+    //       b.push(a[i])  
+    //     }
+    // }
+    //   console.log(b) 
+
+    // HOW TO CREATE DESSENDING ORDER IN ARRAY==============================================================================
+
+    // var Arr = [1, 7, 2, 8, 3, 4, 5, 0, 9];
+    // for (var i = 1; i < Arr.length; i++){
+    //     for (var j = 0; j < i; j++){
+    //         if (Arr[i] > Arr[j]) {
+    //             var x = Arr[i];
+    //             Arr[i] = Arr[j];
+    //             Arr[j] = x;
+    //         }
+    //         }
+    //     }
+    //  console.log(Arr);
+
+
+    // HOW TO CREATE ASSENDING ORDER IN ARRAY ==============================================================================
+
+    //     var arr = [65,63,98,56,21,31]   
+    //     for(var  i = 1;i<arr.length;i++){
+    //         for(var j = 0;j<i;j++){
+    //             if(arr[i]<arr[j]){
+    //                 var x = arr[i]
+    //                 arr[i] = arr[j]
+    //                 arr[j] = x
+    //             }
+    //         }
+    //     }
+    //    console.log(arr);
+
+    // forEach METHOD IN JAVASCRIPT =======================================================================================
+
+    // var arr  = [12,13,45,56]
+    // var copy = []
+    // arr.forEach((val,ind,adp)=>{
+    //   copy.push(val*10)
+    //   console.log(ind)
+    //   console.log(adp)
+    // })
+    // console.log(copy)
+
+    // HOW TO FIND NUMBER IF MATCH THE ARRAY ========================================================
+
+    // var a = new Array();
+    // let size = parseInt(prompt('enter the size of array'))
+    // for(var i=0;i<size;i++){
+    //     a[i] = parseInt(prompt('enter the element'))
+    // }
+    // //document.write(a+"<br>")
+    // let key = parseInt(prompt('enter the key'))
+    // let flag = 0;
+    // let index;
+    // for(var i=0;i<size;i++){
+    //     if(a[i]===key){
+    //         index = i
+    //         flag = 1;
+    //         break;
+    //     }
+    // }
+    // if(flag==1){
+    //     document.write("number found at index")
+    // }else{
+    //     document.write("number not found")
+    // }
+
+
+    // USING FILTER METHOD SUM OF ARRAY ================================================================================
+
+    // var a =[12,45,65,58]
+    // var sum = 0;
+    // let b = a.filter((index)=>{
+    //    sum += index 
+    // })
+    // console.log(sum)
+
+    // HOW TO USE INHERITANCE IN JAVASCRIPT ==============================================================================
+
+    // class car{
+    //     constructor(name,age,classes,city){
+    //         this.name = name;
+    //         this.age = age;
+    //         this.classes = classes;
+    //         this.city = city;
+    //     }
+    //     showdata(){
+    //         console.log(this.name);
+    //         console.log(this.age);
+    //         console.log(this.classes);
+    //         console.log(this.city);
+    //     }
+    // }
+    //     class Vehicle extends car{
+    //         gear(){
+    //             document.write('it is a gear');
+    //         }
+    //     }
+    //     class diabi extends Vehicle{
+    //         mear(){
+    //             document.write('it is a mear')
+    //         }
+    //     } 
+    //     var s1 = new car("mahendra",25,"b.sc","indore")
+    //     let c1 = new Vehicle("rghunath",65,"llb","bhopal")
+    //     var d1 = new diabi("gopal",45,"m.com","satna")
+    //     d1.showdata()
+    //     c1.showdata()
+    //     s1.showdata()
+
+
+    // function cmd(){
+    //     document.getElementById('nameing').style.width = '350px';
+    //         document.getElementById('nameing').style.border = '10px solid green';
+    // }    
+    // function nmd(){
+    //       document.getElementById('nameing').removeEventListener = 'cmd';
+    // }
+
+    // YHA JO REPEATE NUMBER HAI USE FIND KARNA HAI ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 
+
+    //   var arr = [12,12,14,14,65,56,56]
+    //   for(var i=0;i<arr.length;i++){
+    //     if(arr[i]==arr[i+1]){
+    //         console.log(arr[i])            
+    //     }
+    //   }
+
+    // HOW TO FIND LARGEST NUMBER IN ARRAY ================================================================================= 
+
+    // let arr = [51,56,23,12,54,86];
+    // temp = 0;
+    // arr.forEach((element) => {
+    //     if (temp < element) {
+    //         temp = element;
+    //     }
+    // });
+
+    // console.log(`The largest number in the array: ${temp}`);
+
+    // HOW TO FIND SMALLEST NUMBER IN ARRAY ================================================================================
+
+    // var arr = [5, 1, 9, 5, 7];
+    // var smallest = arr[0];
+    // for (var i = 1; i < arr.length; i++) {
+    //     if (arr[i] < smallest) {
+    //         smallest = arr[i];
+    //     }
+    // }
+    // console.log(smallest);
+
+    // THIS PATTERN PROGRAM OUTPUT 1,23,456,78910 ========================================================================
+
+    //  var count =1;
+    //  for(var i=1;i<=4;i++){
+    //     for(var j=1;j<=i;j++){
+    //         document.write(count+" ")
+    //         count++;
+    //     }
+    //     document.write("<br>")
+    //  }
+
+    // PREVIOUS PROGRAM BUT THIS IS PYRAMID ==============================================================================
+
+    // var count = 1;
+    // for(var i=1;i<=4;i++){
+    //     for(var j=1;j<=4-i;j++){
+    //         document.write("&nbsp")
+    //     }
+    //     for(var k=1;k<=i;k++){
+    //         document.write(count+" ")
+    //         count++;
+    //     }
+    //     document.write("</br>")
+    // }
+
+    // HOW TO FIND COMMON VALUE IN TWO ARRAY =========================================================================
+
+    // var a = new Array();
+    // var b = new Array();
+    // for(var i=0;i<5;i++){
+    //     val = prompt("enter the  number")
+    //     a[i] = val
+    // }
+    // for(var j=0;j<5;j++){
+    //     val= prompt("enter the number first")
+    //     b[j]=val
+    // }
+    // for(var i=0;i<5;i++){
+    //     for(var j=0;j<5;j++){
+    //         if(a[i]==b[j]){
+    //             console.log(b[j])
+    //             break;
+    //         }
+    //     }
+    // }
+
+    // HOLLOW STAR PATTERN WITH CROSS ================================================================================
+
+    // for(var i=1 ;i<=10;i++){
+    //     for(var j=1;j<=10;j++){
+    //         if(i == 1 || i == 10 || j == 1 || j == 10 || i == j || j == 10-i+1)
+    //         {
+    //             document.write("  *  ")
+    //         }
+    //         else{
+    //             document.write("&nbsp;&nbsp;")
+    //         }          
+    //     }
+    //   document.write("<br>")
+    // }
+
+    // HOLLOW STAR PATTERN WITHOUT CROSS ==============================================================================
+
+    // for(var i=1;i<=5;i++){
+    //     for(var j=1;j<=5;j++){
+    //         if(i==1 || i==5 || j==1 || j==5){
+    //             document.write("*")
+    //         }
+    //         else{
+    //             document.write("&nbsp;&nbsp;")
+    //         }
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // LIKE TRIANGLE HOLLOW STAR PATTERN WITH CROSS ====================================================================
+
+    // for(var i = 1 ;i<=5;i++){
+    //     for(var j=1;j<=5;j++){
+    //         if(i==1 || j==1 || i==j){
+    //             document.write(" * ")
+    //         }
+    //         else{
+    //             document.write("&nbsp;&nbsp;")
+    //         }
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // HOW TO FIND TWO SMALLEST NUMBER IN ARRAY ==========================================================================
+
+    //   var arr = [6, 8, 1, 2,0, 9];
+    //     var smallest = arr[0];
+    //     var secondSmallest = arr[1];
+    //     for (var i = 0; i < arr.length; i++) {
+    //         if (arr[i] < smallest) {
+    //             secondSmallest = smallest; // Yeh line sahi ki gayi hai
+    //             smallest = arr[i];
+    //         } else if (arr[i] < secondSmallest && arr[i] ! == smallest) {
+    //             secondSmallest = arr[i];
+    //         }
+    //     }
+    //     console.log("Smallest:", smallest);
+    //     console.log("Second Smallest:", secondSmallest);
+
+    // HOW TO FIND TWO LARGEST NUMBER IN ARRAY ============================================================================
+
+    // var arr = [6, 1, 2, 9, 8, 10, 45, 32, 10];
+    // var greatest = arr[0];
+    // var greatest1 = arr[1]
+    // for(var i=0;i<arr.length;i++){
+    //     if(arr[i]>greatest){
+    //         greatest1 = greatest;
+    //         greatest = arr[i];
+    //     }
+    //     else if(arr[i]>greatest1){
+    //         greatest1 = arr[i];
+    //     }
+    // }
+    // console.log(greatest);
+    // console.log(greatest1);
+
+    // HOW TO FIND FIRST DUPLICATE NUMBER =================================================================================
+
+    // var a = [15,56,23,24,6,625,89,56,12,14,56,23,12]
+    // var b = a.sort()
+    // let flag=0
+    // for(var i=0;i<b.length;i++){
+    //     console.log("===========", a[i + 2])
+    //     if(a[i]==a[i+1]){
+    //         flag = 1;
+    //         break;
+    //     }
+    // }
+    //  console.log(a[i])
+
+    // HOW TO FIND LARGET STRING IN ARRAY=================================================================================
+
+    // var a = ["aradhya","jflkskjifkf","kjlds","pamkf"]
+    // var len = a[0].length;
+    // var longest;
+    // for(var i=0;i<a.length;i++){
+    //     if(a[i].length>len){
+    //     var len = a[i].length;
+    //     longest = a[i]
+    //     }
+    // }
+    // console.log(longest)
+
+
+// FIND FIRST 3 LARGEST ==========================================================================
+
+//    var a = ["aradhya", "jflkskjifkf", "kjlds", "pamkf"];
+//     var first = "";
+//     var second = "";
+//     var thirld = "";
+//     for (var i = 0; i < a.length; i++) {
+//         if (a[i].length > first.length) {
+//             thirld = second;
+//             second = first;
+//             first = a[i];
+//         } else if (
+//             a[i].length > second.length &&
+//             a[i].length < first.length
+//         ) {
+//             thirld = second;
+//             second = a[i];
+//         } else if (
+//             a[i].length > thirld.length &&
+//             a[i].length < second.length
+//         ) {
+//             thirld = a[i];
+//         }
+//     }
+//     console.log("First:", first);
+//     console.log("Second:", second);
+//     console.log("Thirld:", thirld);
+
+
+    // HOW TO FIND TWO LARGEST STRING IN ARRAY===========================================================================
+
+    // var stringsArray = ["Hello", "World", "Programming", "OpenAI", "JavaScript"];
+    // var firstMax = "";
+    // var secondMax = "";
+    // // For loop ka istemal karo
+    // for (var i = 0; i < stringsArray.length; i++) {
+    //     // Agar current string current maximum se badi hai, to use secondMax mein daalo aur firstMax ko update karo
+    //     if (stringsArray[i].length > firstMax.length) {
+    //         secondMax = firstMax;
+    //         firstMax = stringsArray[i];
+    //     }
+    //     else if (stringsArray[i].length > secondMax.length && stringsArray[i].length !== firstMax.length) {
+    //         secondMax = stringsArray[i];
+    //     }
+    // }
+    // console.log("Sabse badi string" + firstMax);
+    // console.log("Dusri sabse badi string" + secondMax);
+
+    // YHE SABSE choti DO STRING ==============================================================================
+
+    // var stringsArray = ["Hellkkvnccfo", "Worlddss", "JavaScript", "Programming", "OpenAI"];
+    // var first = stringsArray[0];
+    // var second = stringsArray[1];
+    // for (var i = 0; i < stringsArray.length; i++) {
+    //     if (stringsArray[i].length < first.length) {
+    //         second = first;
+    //         first = stringsArray[i];
+    //     } else if (stringsArray[i].length < second.length && stringsArray[i].length !== first.length) {
+    //         second = stringsArray[i];
+    //     }
+    // }
+    // console.log("Sabse chhoti string: " + first);
+    // console.log("Dusri sabse chhoti string: " + second);      
+
+    // HOW TO FIND SHORTEST STRING IN ARRAY ========================================================================
+
+        // var a = ["aradhya","jflkskjifkf","kjlds","pa"]
+        // var len = a[0].length
+        // var shortest;
+        // for(var i=0;i<a.length;i++){
+        //     if(a[i].length<len){
+        //     var len = a[i].length;
+        //     shortest = a[i]
+        //     }
+        // }
+        // console.log(shortest)
+
+    //  HOW TO FIND PRIME NUMBER IN ARRAY ========================================================================
+
+    // var a = [12, 11, 45, 86, 29, 67,59,89]
+    // for (var i = 0; i < a.length; i++) {
+    //     var c = 0;
+    //     for (var j = 2; j < a[i]; j++) {
+    //         if (a[i] % j == 0) {
+    //             c = 1;
+    //             break;
+    //         }
+    //     }
+    //     if (c == 0) {
+    //         console.log(a[i])
+    //     }
+    // }
+
+
+</script>
+<style>
+    
+    /*
+
+    .id2{
+        width:200px;
+        height:200px;
+        background-color: aqua;
+        position:relative;
+        animation-name: abc;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        
+    }
+    @keyframes abc{
+   0% {background-color: red;left:0;top:0px}
+    25% {background-color: aliceblue;left:500;top:0px}
+     50% {background-color: blanchedalmond;left:500;top:600px}
+      75% {background-color: chartreuse;left:0;top:600px}
+       100% {background-color: gold;left:0;top:0px}
+    
+        
+}
+    
+    */
+
+
+    .card:hover {
+        transform: translatey(-10px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .first {
+        background-color: red;
+        height: 300px;
+        width: 300px;
+    }
+
+    .second {
+        background-color: yellow;
+        height: 300px;
+        width: 300px;
+    }
+
+    .thirld {
+        background-color: rgba(0, 0, 0, 0.527);
+        height: 300px;
+        width: 300px;
+        color: white;
+    }
+
+
+    @media Screen and(min-width: 500px) {
+        .thirld {
+            background-color: black;
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #4CAF50;
+  color: #fff;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;  /* Sabse upar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background-color: #f0f0f0;
+  padding: 100px 20px 20px; /* Navbar ke neeche content dikhane ke liye */
+  position: relative; 
+  z-index: 1;  /* Default */
+}
+
+.modal {
+  background-color: #ff5722;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 10;  /* Navbar se neeche but content se upar */
+}
+
+
+
+</style>
+
+
+<body>
+
+
+
+
+
+    <div class="main">
+        <div class="first">my name1</div>
+        <div class="second">my name2</div>
+        <div class="thirld">my name3</div>
+
+    </div>
+
+
+
+
+    <!-- <div class="container mt-3">
+    <h2>Card Image</h2>
+    <p>Image at the top (card-img-top):</p>
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+    </div>
+    <br>
+
+    <p>Image at the bottom (card-img-bottom):</p>
+    <div class="card" style="width:400px">
+        <div class="card-body">
+            <h4 class="card-title">Jane Doe</h4>
+            <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+        <img class="card-img-bottom" src="https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image" style="width:100%">
+    </div>
+</div>
+
+
+    <h2 id="text" ontoggle="ardh()">aradhya mern stack developer</h2>
+
+    <img src='https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&w=600'
+    onmouseover="cmd()" onmouseout="nmd()" id="nameing"><br> -->
+
+
+    <!-- SIMPLE INTEREST HTML PAGE  -->
+
+    <!-- //  <input type ='text' id="p" placeholder="enter value p">
+    // <input type='text' id="r" placeholder="enter value r">
+    // <input type='text' id="t" placeholder="enter value t">
+    // <input type ='button' value="click" onclick="calculate()">
+    // <div id="res"></div>  -->
+
+    <!-- //<input type = "text" id="va">
+    // <input type = "button" value = "click" onclick="fun()">
+    // <div id = "res"></div>  -->
+
+    <!-- BIJLI KE BILL KA PROGRAM ============================================================================== 
+
+<input type ='text' placeholder ='enter the unit value'  id ='id1'> 
+<input type ='button' onclick ='fun()' value ='click'>   -->
+
+
+    <!-- FORM VALIDATION HTML CODE IN JAVASCRIPT================================================================= -->
+
+    <!-- <form onsubmit ='fun()' name ='myform'>
+   
+   <input type ='email'  name ='email' placeholder ='enter email'><br>
+    <input type='password'  name ='password' placeholder='enter password'><br>
+    <input type='name'  placeholder='enter name'><br>
+    <input type ='submit' value ='register'>
+   
+</form>  -->
+
+
+
+    <!-- HOW TO CREATE A LOGIN PAGE WITH ==================================================== -->
+
+    <!-- 
+                          
+    <form>
+    <label>Username</label>
+    <input type ='text' name ='name' placeholder ='Enter the name'><br>
+    <lable>Password</lable>
+    <input type ='password' name ='password' placeholder ='Enter the password' required><br>
+    <label>Email</label>
+    <input type ='email' name ='email' placeholder ='Enter the email'><br>
+    <button type ='submit'>Login</button><br>
+    <button type ='button' class  ='cancel'>Cancel</button><br>
+    <input type ='checkbox' checked ='checked'>Remember<br>
+    Forgot<a href ='#'>Password ?</a>
+   
+</form> -->
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
